@@ -146,8 +146,7 @@ An easy-to-use web app built with Streamlit:
      neutral     0.6977    0.8108    0.7500        37
      
          sad     0.7794    0.7162    0.7465        74
-     
-  * surprised     0.9118        0.8378        0.8732          37
+    surprised    0.9118    0.8378    0.8732        37
 
 
     accuracy                         0.8361       482
