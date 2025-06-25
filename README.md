@@ -149,9 +149,12 @@ An easy-to-use web app built with Streamlit:
     surprised    0.9118    0.8378    0.8732        37
 
 
-    accuracy                         0.8361       482
-   macro avg     0.8421    0.8363    0.8373       482
-weighted avg     0.8426    0.8361    0.8375       482
+    
+   
+    
+    accuracy                          0.8361       482
+    macro avg     0.8421    0.8363    0.8373       482
+    weighted avg  0.8426    0.8361    0.8375       482
 
 Class-wise Accuracy:
 * angry      : 89.33%
