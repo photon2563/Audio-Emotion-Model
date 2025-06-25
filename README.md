@@ -126,6 +126,36 @@ An easy-to-use web app built with Streamlit:
 
 ##  Model Performance Snapshot
 
+ *Overall Accuracy: 83.61%
+ 
+ *Macro F1 Score: 83.73%
+ 
+ *Classification Report:
+               precision    recall  f1-score   support
+
+       angry     0.9853    0.8933    0.9371        75
+        calm     0.8684    0.8919    0.8800        74
+     disgust     0.9143    0.8649    0.8889        37
+     fearful     0.7326    0.8514    0.7875        74
+       happy     0.8472    0.8243    0.8356        74
+     neutral     0.6977    0.8108    0.7500        37
+         sad     0.7794    0.7162    0.7465        74
+   surprised     0.9118    0.8378    0.8732        37
+
+    accuracy                         0.8361       482
+   macro avg     0.8421    0.8363    0.8373       482
+weighted avg     0.8426    0.8361    0.8375       482
+
+Class-wise Accuracy:
+angry      : 89.33%
+calm       : 89.19%
+disgust    : 86.49%
+fearful    : 85.14%
+happy      : 82.43%
+neutral    : 81.08%
+**sad        : 71.62%**
+surprised  : 83.78%
+
 | Metric            | Target Achieved |
 |-------------------|------------------|
 | Overall Accuracy  |  > 80% |
@@ -133,4 +163,8 @@ An easy-to-use web app built with Streamlit:
 | Per-Class Accuracy|  > 75% (except Sad) |
 | Confusion Matrix  |  Visualized |
 
+**Sad emotional class accuracy stood low because of these probable reasons:**
+* Acoustic Similarity to Other Emotions like neutral, calm resembling low pitch and slow tempo features.
+* Features like ZCR, RMSE are not able to differentiate sad tone because of flat, stable, low-energy profiles.
+* Another reason could be pitch shifting or time stretching sad audio might distort its already-subtle characteristics.
 
